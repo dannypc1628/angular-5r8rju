@@ -1,0 +1,9 @@
+<h2>購物車</h2>
+
+<p *ngIf="items.length==0">沒有任何東西</p>
+
+<div class='cart-item' *ngFor="let item of items">
+  <span>{{item.name}}</span>
+  <span>{{item.price | currency}}</span>
+
+</div>
